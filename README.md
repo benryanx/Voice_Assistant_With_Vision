@@ -1,100 +1,69 @@
-🎤🖥️ Voice Assistant with Vision
+Screenshot and Voice Assistant
+Features
 
-A powerful AI voice assistant that can listen, speak, and see your screen — bringing together voice commands, screenshots, and AI reasoning into one seamless experience.
+- **Voice Interaction**: Speak to the assistant to ask questions or give commands.
+- **Screenshot Capture**: Press `F9` to capture a screenshot, which can be included in conversations for analysis.
+- **Text-to-Speech**: The assistant reads responses aloud using a Text-to-Speech engine.
 
-✨ Features
+Installation
 
-🎙 Voice Interaction
-Talk naturally to the assistant — ask questions, give commands, and receive spoken responses.
+### Prerequisites
+- Python 3.8 or later installed on your system.
+- An OpenAI API key. Sign up and get your API key from OpenAI.
 
-🖼 Screenshot Capture
-Press F9 anytime to capture your screen. The image is sent to the assistant for visual analysis.
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/n00gy/Voice_Assistant_With_Vision.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd Voice_Assistant_With_Vision
+   ```
+3. Create a virtual environment (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+4. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+5. Set your OpenAI API key as an environment variable:
+   ```bash
+   export OPENAI_API_KEY="your_openai_api_key"  # On Windows: set OPENAI_API_KEY=your_openai_api_key
+   ```
 
-🔊 Text-to-Speech
-All AI responses are spoken back to you using a built-in TTS engine.
+Usage
 
-👁 Vision-Powered AI
-The assistant can analyze screenshots and use what it sees to help answer questions.
-
-🛠 Installation
-📋 Prerequisites
-
-Make sure you have:
-
-Python 3.8+
-
-An OpenAI API Key
-Get one from 👉 https://platform.openai.com
-
-🚀 Setup Steps
-
-1️⃣ Clone the repository
-git clone https://github.com/n00gy/Voice_Assistant_With_Vision.git
-
-2️⃣ Enter the project folder
-cd Voice_Assistant_With_Vision
-
-3️⃣ Create a virtual environment (recommended)
-python -m venv venv
-
-
-Activate it:
-
-Windows
-
-venv\Scripts\activate
-
-
-Mac / Linux
-
-source venv/bin/activate
-
-4️⃣ Install dependencies
-pip install -r requirements.txt
-
-5️⃣ Set your OpenAI API Key
-
-Windows
-
-set OPENAI_API_KEY=your_openai_api_key
-
-
-Mac / Linux
-
-export OPENAI_API_KEY="your_openai_api_key"
-
-▶️ Usage
-
-Start the assistant:
-
+Run the script:
+```bash
 python main.py
+```
 
-🗣 How to Use
+### Interacting with the Assistant
+1. Speak into the microphone when prompted.
+2. Press `F9` to capture a screenshot. The assistant will analyze the screenshot and include it in the conversation.
+3. Say "exit" or "quit" to stop the program.
 
-🎤 Speak when prompted to give commands
-🖼 Press F9 to take a screenshot
-🧠 The assistant will analyze what it sees
-🔊 It will reply with voice
-❌ Say “exit” or “quit” to stop
+Dependencies
 
-📦 Dependencies
+The project relies on the following Python libraries:
+- `openai` – For AI-generated responses.
+- `pyttsx3` – For Text-to-Speech conversion.
+- `SpeechRecognition` – For capturing and processing voice input.
+- `keyboard` – For detecting keypresses (e.g., `F9`).
+- `Pillow` – For capturing and handling screenshots.
 
-This project uses:
+Contributing
 
-Library	Purpose
-openai	AI responses
-pyttsx3	Text-to-speech
-SpeechRecognition	Voice input
-keyboard	F9 key detection
-Pillow	Screenshot capture
-🤝 Contributing
+Contributions are welcome! Feel free to submit issues or pull requests for improvements.
 
-📜 License
+License
 
-This project is licensed under the MIT License — free to use, modify, and distribute.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute it as per the license terms.
 
-💙 Acknowledgments
+Acknowledgments
 
-OpenAI for the incredible AI models
-
-Python community for the amazing open-source libraries
+- [OpenAI](https://openai.com/) for the powerful API.
+- The Python community for the fantastic libraries used in this project.
